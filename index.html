@@ -8,7 +8,7 @@
     <script src="scripts/main.js" defer></script>
   </head>
   <body>
-    <a-scene background="color: #333333">
+    <a-scene background="color: #000000">
       <a-assets>
           <img id="wood" src="wood.jpg" />
           <img id="wood2" src="wood2.jpg" />
@@ -22,11 +22,12 @@
         depth="1" 
         material="src: #wood"
         shadow 
-        animation="property: rotation; 
+        animation="property: rotation;
                    to: 90 360 180; 
                    dur: 2000; 
                    easing: linear; 
-                   loop: true">
+                   loop: true"
+        animation__2="property: position">
       </a-box>
       <a-box id="myOtherBox" 
         position="2 1 -3" 
